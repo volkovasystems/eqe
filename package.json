@@ -1,6 +1,6 @@
 {
   "name": "eqe",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Shallow equal.",
   "main": "eqe.js",
   "support": "eqe.support.js",
@@ -20,6 +20,9 @@
     "eqe"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/eqe/issues"
@@ -27,7 +30,7 @@
   "homepage": "https://github.com/volkovasystems/eqe#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "nafe": "^0.0.0",
+    "nafe": "^0.1.0",
     "protype": "^0.21.0",
     "stringe": "^0.2.0"
   },
@@ -37,6 +40,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^2.3.3"
+    "webpack": "^2.4.1"
   }
 }
