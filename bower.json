@@ -1,6 +1,6 @@
 {
   "name": "eqe",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Shallow equal.",
   "main": "eqe.deploy.js",
   "support": "eqe.support.js",
@@ -23,8 +23,8 @@
     "tests"
   ],
   "dependencies": {
-    "nafe": "^0.1.0",
+    "nafe": "^0.2.0",
     "protype": "^0.21.0",
-    "stringe": "^0.2.0"
+    "stringe": "^0.3.0"
   }
 }
