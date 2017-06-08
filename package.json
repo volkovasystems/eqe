@@ -1,6 +1,6 @@
 {
   "name": "eqe",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Shallow equal.",
   "main": "eqe.js",
   "support": "eqe.support.js",
@@ -30,9 +30,9 @@
   "homepage": "https://github.com/volkovasystems/eqe#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "nafe": "^0.2.0",
-    "protype": "^0.21.0",
-    "stringe": "^0.3.0"
+    "nafe": "^0.3.0",
+    "protype": "^0.22.0",
+    "stringe": "^0.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -40,6 +40,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^2.4.1"
+    "webpack": "^2.6.1"
   }
 }
