@@ -34,10 +34,11 @@
               			"file": "eqe.js",
               			"module": "eqe",
               			"author": "Richeve S. Bebedor",
-              			"contributors": [
-              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-              			],
               			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
+              			],
               			"repository": "https://github.com/volkovasystems/eqe.git",
               			"test": "eqe-test.js",
               			"global": true
@@ -56,16 +57,12 @@
               
               	@include:
               		{
-              			"nafe": "nafe",
-              			"protype": "protype",
-              			"stringe": "stringe"
+              			"nafe": "nafe"
               		}
               	@end-include
               */
 
 var nafe = require("nafe");
-var protype = require("protype");
-var stringe = require("stringe");
 
 var eqe = function eqe(source, target) {
 	/*;
@@ -78,10 +75,10 @@ var eqe = function eqe(source, target) {
                                         */
 
 	try {
-		if (protype(source, FUNCTION) && protype(target, FUNCTION) &&
+		if (typeof source == "function" && typeof target == "function" &&
 		!nafe(source) && !nafe(target))
 		{
-			return stringe(source) == stringe(target) || source === target;
+			return source.toString() == target.toString() || source === target;
 		}
 
 		return source === target;
