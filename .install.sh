@@ -1,6 +1,7 @@
 yarn add \
 babel-runtime \
 nafe \
+stringe \
 --save && \
 yarn add \
 babel-cli \
@@ -12,5 +13,6 @@ webpack \
 --dev && \
 bower install \
 nafe \
+stringe \
 --save \
 --force-latest

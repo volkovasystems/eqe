@@ -57,12 +57,14 @@
               
               	@include:
               		{
-              			"nafe": "nafe"
+              			"nafe": "nafe",
+              			"stringe": "stringe"
               		}
               	@end-include
               */
 
 var nafe = require("nafe");
+var stringe = require("stringe");
 
 var eqe = function eqe(source, target) {
 	/*;
@@ -78,7 +80,7 @@ var eqe = function eqe(source, target) {
 		if (typeof source == "function" && typeof target == "function" &&
 		!nafe(source) && !nafe(target))
 		{
-			return source.toString() == target.toString() || source === target;
+			return stringe(source) == stringe(target) || source === target;
 		}
 
 		return source === target;
