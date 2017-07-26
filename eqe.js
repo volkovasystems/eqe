@@ -77,9 +77,12 @@ const eqe = function eqe( source, target ){
 	*/
 
 	try{
-		if( typeof source == "function" && typeof target == "function" &&
-			!nafe( source ) && !nafe( target ) )
-		{
+		if(
+			typeof source == "function"
+			&& typeof target == "function"
+			&& !nafe( source )
+			&& !nafe( target )
+		){
 			return stringe( source ) == stringe( target ) || source === target;
 		}
 
