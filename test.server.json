@@ -5,22 +5,22 @@
 		"passes": 14,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-07-29T13:51:15.040Z",
-		"end": "2017-07-29T13:51:15.046Z",
-		"duration": 6
+		"start": "2017-07-29T13:53:01.531Z",
+		"end": "2017-07-29T13:53:01.536Z",
+		"duration": 5
 	},
 	"tests": [
 		{
 			"title": "should be equal to true",
 			"fullTitle": "eqe `eqe( function( ){ }, function( ){ } )` should be equal to true",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should be equal to true",
 			"fullTitle": "eqe eqe( Array, Array )` should be equal to true",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -115,14 +115,14 @@
 		{
 			"title": "should be equal to true",
 			"fullTitle": "eqe `eqe( function( ){ }, function( ){ } )` should be equal to true",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should be equal to true",
 			"fullTitle": "eqe eqe( Array, Array )` should be equal to true",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
