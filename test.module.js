@@ -155,7 +155,6 @@ describe( "eqe", ( ) => {
 	} );
 
 
-
 	describe( "`eqe( Array, 'Array' )`", ( ) => {
 		it( "should be equal to false", ( ) => {
 			assert.equal( eqe( Array, "Array" ), false );
@@ -192,7 +191,7 @@ describe( "eqe", ( ) => {
 	} );
 
 
-	describe( "eqe( Array, Array )`", ( ) => {
+	describe( "`eqe( Array, Array )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 			assert.equal( eqe( Array, Array ), true );
 		} );
@@ -296,10 +295,7 @@ describe( "eqe", ( ) => {
 
 describe( "eqe", ( ) => {
 
-	let directory = __dirname;
-	let testBridge = path.resolve( directory, "bridge.html" );
-	let bridgeURL = `file://${ testBridge }`;
-
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`eqe( function( ){ }, function( ){ } )`", ( ) => {
 		it( "should be equal to true", ( ) => {
@@ -309,7 +305,7 @@ describe( "eqe", ( ) => {
 	} );
 
 
-	describe( "eqe( Array, Array )`", ( ) => {
+	describe( "`eqe( Array, Array )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( Array, Array ) );
 			assert.equal( result.value, true );
