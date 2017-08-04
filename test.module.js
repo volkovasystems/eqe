@@ -81,7 +81,7 @@ describe( "eqe", ( ) => {
 	} );
 
 
-	describe( "eqe( Array, Array )`", ( ) => {
+	describe( "`eqe( Array, Array )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 			assert.equal( eqe( Array, Array ), true );
 		} );
