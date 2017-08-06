@@ -76,28 +76,36 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( function( ){ }, function( ){ } )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( function( ){ }, function( ){ } ), true );
+		
 		} );
 	} );
 
 
 	describe( "`eqe( Array, Array )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( Array, Array ), true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( null, null )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( null, null ), true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( undefined, undefined )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( undefined, undefined ), true );
+
 		} );
 	} );
 
@@ -113,65 +121,81 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( Symbol( 'hi' ).toString( ), Symbol( 'hi' ).toString( ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( Symbol( "hi" ).toString( ), Symbol( "hi" ).toString( ) ), true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( 0, '' )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( 0, "" ), false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( null, undefined )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+			
 			assert.equal( eqe( null, undefined ), false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( { }, { } )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( { }, { } ), false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( [ ], [ ] )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( [ ], [ ] ), false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( ( ) => { }, ( ) => { } )`", ( ) => {
-
 		it( "should be equal to true", ( ) => {
-			assert.equal( eqe( ( ) => { }, ( ) => { } ), true );
-		} );
 
+			assert.equal( eqe( ( ) => { }, ( ) => { } ), true );
+
+		} );
 	} );
 
 
 	describe( "`eqe( Array, 'Array' )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( Array, "Array" ), false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( function hello( ){ return 'hello' }, function hello( ){ return 'hi' } )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( function hello( ){ return "hello" }, function hello( ){ return "hi" } ), false );
+			
 		} );
 	} );
 
 
 	describe( "`eqe( 123, 456 )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( 123, 456 ), false );
+
 		} );
 	} );
 
@@ -186,28 +210,36 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( function( ){ }, function( ){ } )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( function( ){ }, function( ){ } ), true );
+		
 		} );
 	} );
 
 
 	describe( "`eqe( Array, Array )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( Array, Array ), true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( null, null )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( null, null ), true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( undefined, undefined )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( undefined, undefined ), true );
+
 		} );
 	} );
 
@@ -223,68 +255,84 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( Symbol( 'hi' ).toString( ), Symbol( 'hi' ).toString( ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( Symbol( "hi" ).toString( ), Symbol( "hi" ).toString( ) ), true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( 0, '' )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( 0, "" ), false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( null, undefined )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+			
 			assert.equal( eqe( null, undefined ), false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( { }, { } )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( { }, { } ), false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( [ ], [ ] )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( [ ], [ ] ), false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( ( ) => { }, ( ) => { } )`", ( ) => {
-
 		it( "should be equal to true", ( ) => {
+
 			assert.equal( eqe( ( ) => { }, ( ) => { } ), true );
+
 		} );
-
 	} );
-
 
 
 	describe( "`eqe( Array, 'Array' )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( Array, "Array" ), false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( function hello( ){ return 'hello' }, function hello( ){ return 'hi' } )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( function hello( ){ return "hello" }, function hello( ){ return "hi" } ), false );
+			
 		} );
 	} );
 
 
 	describe( "`eqe( 123, 456 )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			assert.equal( eqe( 123, 456 ), false );
+			
 		} );
 	} );
+
 
 } );
 
