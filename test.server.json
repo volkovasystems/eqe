@@ -1,214 +1,214 @@
 {
-	"stats": {
-		"suites": 15,
-		"tests": 14,
-		"passes": 14,
-		"pending": 0,
-		"failures": 0,
-		"start": "2017-08-08T02:33:59.990Z",
-		"end": "2017-08-08T02:33:59.996Z",
-		"duration": 6
-	},
-	"tests": [
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( function( ){ }, function( ){ } )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( Array, Array )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( null, null )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( undefined, undefined )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( Symbol.for( 'hello' ), Symbol.for( 'hello' ) )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( Symbol( 'hi' ).toString( ), Symbol( 'hi' ).toString( ) )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( 0, '' )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( null, undefined )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( { }, { } )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( [ ], [ ] )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( ( ) => { }, ( ) => { } )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( Array, 'Array' )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( function hello( ){ return 'hello' }, function hello( ){ return 'hi' } )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( 123, 456 )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		}
-	],
-	"pending": [],
-	"failures": [],
-	"passes": [
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( function( ){ }, function( ){ } )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( Array, Array )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( null, null )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( undefined, undefined )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( Symbol.for( 'hello' ), Symbol.for( 'hello' ) )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( Symbol( 'hi' ).toString( ), Symbol( 'hi' ).toString( ) )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( 0, '' )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( null, undefined )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( { }, { } )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( [ ], [ ] )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to true",
-			"fullTitle": "eqe `eqe( ( ) => { }, ( ) => { } )` should be equal to true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( Array, 'Array' )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( function hello( ){ return 'hello' }, function hello( ){ return 'hi' } )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to false",
-			"fullTitle": "eqe `eqe( 123, 456 )` should be equal to false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		}
-	]
+  "stats": {
+    "suites": 15,
+    "tests": 14,
+    "passes": 14,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-08-20T02:59:33.729Z",
+    "end": "2017-08-20T02:59:33.737Z",
+    "duration": 8
+  },
+  "tests": [
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( function( ){ }, function( ){ } )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( Array, Array )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( null, null )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( undefined, undefined )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( Symbol.for( 'hello' ), Symbol.for( 'hello' ) )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( Symbol( 'hi' ).toString( ), Symbol( 'hi' ).toString( ) )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( 0, '' )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( null, undefined )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( { }, { } )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( [ ], [ ] )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( ( ) => { }, ( ) => { } )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( Array, 'Array' )` should be equal to false",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( function hello( ){ return 'hello' }, function hello( ){ return 'hi' } )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( 123, 456 )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( function( ){ }, function( ){ } )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( Array, Array )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( null, null )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( undefined, undefined )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( Symbol.for( 'hello' ), Symbol.for( 'hello' ) )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( Symbol( 'hi' ).toString( ), Symbol( 'hi' ).toString( ) )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( 0, '' )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( null, undefined )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( { }, { } )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( [ ], [ ] )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "eqe `eqe( ( ) => { }, ( ) => { } )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( Array, 'Array' )` should be equal to false",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( function hello( ){ return 'hello' }, function hello( ){ return 'hi' } )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "eqe `eqe( 123, 456 )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }
