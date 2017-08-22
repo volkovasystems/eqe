@@ -74,7 +74,7 @@ describe( "eqe", ( ) => {
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( eqe( function( ){ }, function( ){ } ), true );
-		
+
 		} );
 	} );
 
@@ -108,9 +108,9 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( Symbol.for( 'hello' ), Symbol.for( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
-			//: @ignore:
+
 			assert.equal( eqe( Symbol.for( "hello" ), Symbol.for( "hello" ) ), true );
-			//: @end-ignore
+
 		} );
 	} );
 
@@ -135,7 +135,7 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( null, undefined )`", ( ) => {
 		it( "should be equal to false", ( ) => {
-			
+
 			assert.equal( eqe( null, undefined ), false );
 
 		} );
@@ -182,7 +182,7 @@ describe( "eqe", ( ) => {
 		it( "should be equal to false", ( ) => {
 
 			assert.equal( eqe( function hello( ){ return "hello" }, function hello( ){ return "hi" } ), false );
-			
+
 		} );
 	} );
 
@@ -194,7 +194,6 @@ describe( "eqe", ( ) => {
 
 		} );
 	} );
-
 
 } );
 

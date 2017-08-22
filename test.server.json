@@ -5,9 +5,9 @@
     "passes": 14,
     "pending": 0,
     "failures": 0,
-    "start": "2017-08-20T02:59:33.729Z",
-    "end": "2017-08-20T02:59:33.737Z",
-    "duration": 8
+    "start": "2017-08-22T09:27:52.755Z",
+    "end": "2017-08-22T09:27:52.761Z",
+    "duration": 6
   },
   "tests": [
     {
@@ -90,7 +90,7 @@
     {
       "title": "should be equal to false",
       "fullTitle": "eqe `eqe( Array, 'Array' )` should be equal to false",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -192,7 +192,7 @@
     {
       "title": "should be equal to false",
       "fullTitle": "eqe `eqe( Array, 'Array' )` should be equal to false",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
