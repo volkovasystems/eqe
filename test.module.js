@@ -78,7 +78,7 @@ describe( "eqe", ( ) => {
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( eqe( function( ){ }, function( ){ } ), true );
-		
+
 		} );
 	} );
 
@@ -112,9 +112,9 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( Symbol.for( 'hello' ), Symbol.for( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
-			//: @ignore:
+
 			assert.equal( eqe( Symbol.for( "hello" ), Symbol.for( "hello" ) ), true );
-			//: @end-ignore
+
 		} );
 	} );
 
@@ -139,7 +139,7 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( null, undefined )`", ( ) => {
 		it( "should be equal to false", ( ) => {
-			
+
 			assert.equal( eqe( null, undefined ), false );
 
 		} );
@@ -186,7 +186,7 @@ describe( "eqe", ( ) => {
 		it( "should be equal to false", ( ) => {
 
 			assert.equal( eqe( function hello( ){ return "hello" }, function hello( ){ return "hi" } ), false );
-			
+
 		} );
 	} );
 
@@ -198,7 +198,6 @@ describe( "eqe", ( ) => {
 
 		} );
 	} );
-
 
 } );
 
@@ -212,7 +211,7 @@ describe( "eqe", ( ) => {
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( eqe( function( ){ }, function( ){ } ), true );
-		
+
 		} );
 	} );
 
@@ -246,9 +245,9 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( Symbol.for( 'hello' ), Symbol.for( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
-			//: @ignore:
+
 			assert.equal( eqe( Symbol.for( "hello" ), Symbol.for( "hello" ) ), true );
-			//: @end-ignore
+
 		} );
 	} );
 
@@ -273,7 +272,7 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( null, undefined )`", ( ) => {
 		it( "should be equal to false", ( ) => {
-			
+
 			assert.equal( eqe( null, undefined ), false );
 
 		} );
@@ -320,7 +319,7 @@ describe( "eqe", ( ) => {
 		it( "should be equal to false", ( ) => {
 
 			assert.equal( eqe( function hello( ){ return "hello" }, function hello( ){ return "hi" } ), false );
-			
+
 		} );
 	} );
 
@@ -329,12 +328,9 @@ describe( "eqe", ( ) => {
 		it( "should be equal to false", ( ) => {
 
 			assert.equal( eqe( 123, 456 ), false );
-			
+
 		} );
 	} );
-
-
-} );
 
 //: @end-client
 
@@ -347,116 +343,144 @@ describe( "eqe", ( ) => {
 
 	describe( "`eqe( function( ){ }, function( ){ } )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( function( ){ }, function( ){ } ) );
 			assert.equal( result.value, true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( Array, Array )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( Array, Array ) );
 			assert.equal( result.value, true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( null, null )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( null, null ) );
 			assert.equal( result.value, true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( undefined, undefined )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( undefined, undefined ) );
 			assert.equal( result.value, true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( Symbol.for( 'hello' ), Symbol.for( 'hello' ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			//: @ignore:
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( Symbol.for( "hello" ), Symbol.for( "hello" ) ) );
 			assert.equal( result.value, true );
 			//: @end-ignore
+
 		} );
 	} );
 
 
 	describe( "`eqe( Symbol( 'hi' ).toString( ), Symbol( 'hi' ).toString( ) )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			//: @ignore:
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( Symbol( "hi" ).toString( ), Symbol( "hi" ).toString( ) ) );
 			assert.equal( result.value, true );
 			//: @end-ignore
+
 		} );
 	} );
 
 
 	describe( "`eqe( 0, '' )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( 0, "" ) );
 			assert.equal( result.value, false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( null, undefined )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( null, undefined ) );
 			assert.equal( result.value, false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( { }, { } )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( { }, { } ) );
 			assert.equal( result.value, false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( [ ], [ ] )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( [ ], [ ] ) );
 			assert.equal( result.value, false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( ( ) => { }, ( ) => { } )`", ( ) => {
 		it( "should be equal to true", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( ( ) => { }, ( ) => { } ) );
 			assert.equal( result.value, true );
+
 		} );
 	} );
 
 
 	describe( "`eqe( Array, 'Array' )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( Array, "Array" ) );
 			assert.equal( result.value, false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( function hello( ){ return 'hello' }, function hello( ){ return 'hi' } )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( function hello( ){ return "hello" }, function hello( ){ return "hi" } ) );
 			assert.equal( result.value, false );
+
 		} );
 	} );
 
 
 	describe( "`eqe( 123, 456 )`", ( ) => {
 		it( "should be equal to false", ( ) => {
+
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( 123, 456 ) );
 			assert.equal( result.value, false );
+			
 		} );
 	} );
 
