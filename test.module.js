@@ -332,8 +332,9 @@ describe( "eqe", ( ) => {
 		} );
 	} );
 
-//: @end-client
+} );
 
+//: @end-client
 
 //: @bridge:
 
@@ -480,7 +481,7 @@ describe( "eqe", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute( ( ) => eqe( 123, 456 ) );
 			assert.equal( result.value, false );
-			
+
 		} );
 	} );
 
