@@ -76,21 +76,29 @@ const eqe = function eqe( source, target ){
 		@end-meta-configuration
 	*/
 
+	if(
+		source === target
+	){
+		return true;
+	}
+
 	try{
 		if(
-			typeof source == "function"
-			&& typeof target == "function"
-			&& !nafe( source )
-			&& !nafe( target )
+				typeof source == "function"
+			&&	typeof target == "function"
+
+			&&	!nafe( source )
+			&&	!nafe( target )
 		){
-			return stringe( source ) == stringe( target ) || source === target;
+			return (
+					stringe( source ) == stringe( target )
+				||	source === target
+			);
 		}
-
-		return source === target;
-
-	}catch( error ){
-		return false;
 	}
+	catch( error ){ }
+
+	return false;
 };
 
 module.exports = eqe;

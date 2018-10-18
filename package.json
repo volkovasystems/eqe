@@ -8,6 +8,7 @@
 	"browser": "eqe.deploy.js",
 	"scripts": {
 		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"reset": "rsetmod clean",
 		"clear": "rsetmod clean --clear",
 		"formal": "jesy apply '*.json'",
 		"build:support": "gulp --module eqe --all",

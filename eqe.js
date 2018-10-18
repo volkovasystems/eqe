@@ -76,6 +76,10 @@ const eqe = function eqe( source, target ){
 		@end-meta-configuration
 	*/
 
+	if( source === target ){
+		return true;
+	}
+
 	try{
 		if(
 			typeof source == "function"
@@ -86,11 +90,9 @@ const eqe = function eqe( source, target ){
 			return stringe( source ) == stringe( target ) || source === target;
 		}
 
-		return source === target;
+	}catch( error ){ }
 
-	}catch( error ){
-		return false;
-	}
+	return false;
 };
 
 module.exports = eqe;
